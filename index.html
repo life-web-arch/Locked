@@ -99,7 +99,7 @@
 
         // Prevent black overlay when tapping and holding on video screen
         document.getElementById("video-container").addEventListener('touchstart', function(event) {
-            event.preventDefault(); // Prevent default touch behavior
+            event.stopPropagation(); // Stop propagation of touch events
         });
 
         function validatePassword(event) {
